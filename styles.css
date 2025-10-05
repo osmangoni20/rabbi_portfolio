@@ -79,6 +79,7 @@ img, svg {
 /* Header */
 .site-header {
   position: fixed;
+  display:block;
   top: 0;
   z-index: 50;
   width: 100%; 
@@ -360,8 +361,6 @@ img, svg {
 .card:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(17,24,39,0.08); }
 
 .card img { width: 100%; height: auto; }
-
-.card-body { padding: 14px 16px; }
 
 /* Training & Certification card images - full width, square corners */
 #certificates .card { overflow: visible; padding: 8px; }
