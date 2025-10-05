@@ -85,6 +85,8 @@ img, svg {
   backdrop-filter: saturate(180%) blur(12px);
   border-bottom: 1px solid var(--border);
 }
+.site-header .container { width: 100%; margin: 0; }
+.header-inner { padding-inline: 16px; }
 
 .header-inner {
   display: flex;
@@ -358,6 +360,10 @@ img, svg {
 .card img { width: 100%; height: auto; }
 
 .card-body { padding: 14px 16px; }
+
+/* Training & Certification card images - full width, square corners */
+#certificates .card { overflow: visible; padding: 8px; }
+#certificates .card img { width: 100%; height: auto; border-radius: 0; aspect-ratio: 16/10; object-fit: cover; }
 
 /* Education grid side by side on large screens */
 .edu-grid {
