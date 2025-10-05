@@ -214,6 +214,9 @@ img, svg {
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-1);
 }
+@media (min-width: 980px) {
+  .hero-media img { width: 85%; margin-left: auto; }
+}
 
 .scroll-down {
   position: absolute;
@@ -377,7 +380,8 @@ img, svg {
 .footer-brand h3 { margin: 0 0 4px 0; }
 .footer-brand .small { font-size: 0.92rem; }
 .contact-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
-.footer-bottom { border-top: 1px solid var(--border); padding-top: 12px; margin-top: 8px; text-align: center; }
+.footer-bottom { border-top: 1px solid var(--border); padding-top: 12px; margin-top: 8px; }
+.footer-bottom p { margin: 0; text-align: center; }
 
 /* Contact */
 .contact-grid {
