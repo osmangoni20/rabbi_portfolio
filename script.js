@@ -102,3 +102,22 @@
     el.addEventListener('mouseleave', () => { ring.style.transform = ring.style.transform.replace(' scale(1.2)', ''); });
   });
 })();
+
+// Swap hero image if local file exists (assets/images/hero.webp|jpg|png)
+(function () {
+  const img = document.getElementById('hero-image');
+  if (!img) return;
+  const sources = [
+    'assets/images/hero.webp',
+    'assets/images/hero.jpg',
+    'assets/images/hero.png',
+  ];
+  const tryLoad = (srcIndex) => {
+    if (srcIndex >= sources.length) return; // keep placeholder
+    const test = new Image();
+    test.onload = () => { img.src = sources[srcIndex]; };
+    test.onerror = () => { tryLoad(srcIndex + 1); };
+    test.src = sources[srcIndex] + '?v=' + Date.now();
+  };
+  tryLoad(0);
+})();
