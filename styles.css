@@ -356,18 +356,28 @@ img, svg {
 
 .card-body { padding: 14px 16px; }
 
-/* Gallery */
-.gallery-grid {
+/* Education grid side by side on large screens */
+.edu-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 12px;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+@media (min-width: 980px) {
+  .edu-grid { grid-template-columns: 1fr 1fr; }
 }
 
-.gallery-grid img {
-  border-radius: var(--radius-md);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-1);
+/* Footer enhanced */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr auto;
+  gap: 24px;
+  align-items: start;
+  padding: 28px 0;
 }
+.footer-brand h3 { margin: 0 0 4px 0; }
+.footer-brand .small { font-size: 0.92rem; }
+.contact-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.footer-bottom { border-top: 1px solid var(--border); padding-top: 12px; margin-top: 8px; }
 
 /* Contact */
 .contact-grid {
@@ -433,16 +443,7 @@ img, svg {
 [data-reveal] { opacity: 0; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease; }
 [data-reveal].is-visible { opacity: 1; transform: none; }
 
-/* Custom Cursor */
-#cursor-dot, #cursor-ring {
-  position: fixed; left: 0; top: 0; pointer-events: none; z-index: 9999; opacity: 0; transition: opacity .25s ease;
-}
-#cursor-dot { width: 6px; height: 6px; background: var(--primary); border-radius: 50%; box-shadow: 0 0 10px var(--primary); }
-#cursor-ring { width: 36px; height: 36px; border: 2px solid var(--primary); border-radius: 50%; box-shadow: 0 0 30px var(--ring); }
-
-@media (hover: none) and (pointer: coarse) {
-  #cursor-dot, #cursor-ring { display: none; }
-}
+/* Remove custom cursor: default pointer */
 
 /* Skip link */
 .skip-link {

@@ -62,46 +62,7 @@
   revealables.forEach((el) => io.observe(el));
 })();
 
-// Custom cursor (dot + ring)
-(function () {
-  const dot = document.getElementById('cursor-dot');
-  const ring = document.getElementById('cursor-ring');
-  if (!dot || !ring) return;
-  const isFine = matchMedia('(pointer: fine)').matches;
-  if (!isFine) return; // don't show on touch
-
-  let mouseX = 0, mouseY = 0;
-  let ringX = 0, ringY = 0;
-  let raf = 0;
-
-  const render = () => {
-    ringX += (mouseX - ringX) * 0.15;
-    ringY += (mouseY - ringY) * 0.15;
-    ring.style.transform = `translate3d(${ringX - 18}px, ${ringY - 18}px, 0)`;
-    dot.style.transform = `translate3d(${mouseX - 3}px, ${mouseY - 3}px, 0)`;
-    raf = requestAnimationFrame(render);
-  };
-
-  const show = () => { dot.style.opacity = '1'; ring.style.opacity = '1'; };
-  const hide = () => { dot.style.opacity = '0'; ring.style.opacity = '0'; };
-
-  window.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX; mouseY = e.clientY;
-    if (!raf) raf = requestAnimationFrame(render);
-    show();
-  });
-  window.addEventListener('mouseleave', () => { hide(); cancelAnimationFrame(raf); raf = 0; });
-
-  window.addEventListener('mousedown', () => { ring.style.transform += ' scale(0.85)'; });
-  window.addEventListener('mouseup', () => { ring.style.transform = ring.style.transform.replace(' scale(0.85)', ''); });
-
-  // Hovering interactive elements enlarges ring
-  const interactive = 'a, button, .btn, .site-nav a';
-  document.querySelectorAll(interactive).forEach((el) => {
-    el.addEventListener('mouseenter', () => { ring.style.transform += ' scale(1.2)'; });
-    el.addEventListener('mouseleave', () => { ring.style.transform = ring.style.transform.replace(' scale(1.2)', ''); });
-  });
-})();
+// Custom cursor removed; using default pointer
 
 // Swap hero image if local file exists (assets/images/hero.webp|jpg|png)
 (function () {

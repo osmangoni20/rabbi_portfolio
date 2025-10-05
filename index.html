@@ -28,9 +28,7 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Custom Cursor -->
-    <div id="cursor-dot" aria-hidden="true"></div>
-    <div id="cursor-ring" aria-hidden="true"></div>
+    
 
     <!-- Header / Navbar -->
     <header class="site-header" data-reveal>
@@ -54,7 +52,7 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#certificates">Certificates</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -114,15 +112,21 @@
       <section id="experience" class="section alt" data-reveal>
         <div class="container">
           <h2 class="section-title">Experience</h2>
-          <div class="timeline">
-            <article class="timeline-item">
-              <div class="dot" aria-hidden="true"></div>
-              <div class="content">
+          <div class="cards-grid">
+            <article class="card">
+              <div class="card-body">
                 <h3>Bashundhara Public School and College</h3>
-                <p class="muted">IT Technician (IT Section) — 1 Year</p>
-                <p>
-                  Location: Plot-2, Block-N, Bashundhara R/A, Dhaka-1229
-                </p>
+                <p class="muted">IT Technician (IT Section)</p>
+                <p class="muted">Duration: 1 Year</p>
+                <p class="muted">Location: Plot-2, Block-N, Bashundhara R/A, Dhaka-1229</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card-body">
+                <h3>Ideal Institute of Science & Technology (IIST)</h3>
+                <p class="muted">Instructor</p>
+                <p class="muted">Location: 105, Senpara Parbata, Mirpur-10, Dhaka-1216, BD</p>
+                <p class="muted">(West side of Metro Pillar #255)</p>
               </div>
             </article>
           </div>
@@ -133,25 +137,23 @@
       <section id="education" class="section alt" data-reveal>
         <div class="container">
           <h2 class="section-title">Educational Qualification</h2>
-          <div class="timeline">
-            <article class="timeline-item">
-              <div class="dot" aria-hidden="true"></div>
-              <div class="content">
+          <div class="edu-grid">
+            <article class="card">
+              <div class="card-body">
                 <h3>Diploma in Engineering</h3>
                 <p class="muted">Bhola Polytechnic Institute, Bhola — 2021</p>
                 <p>Technology: Computer Technology</p>
-                <p>Roll No: 920180 • Reg. No: 879875</p>
-                <p>CGPA: 3.91 (Out of 4.00) • Board: BTEB</p>
+                <p>CGPA: 3.91 / 4.00</p>
+                <p class="muted">Board: BTEB</p>
               </div>
             </article>
-            <article class="timeline-item">
-              <div class="dot" aria-hidden="true"></div>
-              <div class="content">
+            <article class="card">
+              <div class="card-body">
                 <h3>Secondary School Certificate (SSC)</h3>
-                <p class="muted">Dhandi Model Secondary School, Patuakhali — 2017</p>
+                <p class="muted">Dhandi Model Secondary School, Patuakhali</p>
                 <p>Group: Science</p>
-                <p>Roll No: 119561 • Reg. No: 1415170452</p>
-                <p>GPA: 4.23 (Out of 5.00) • Board: Barishal</p>
+                <p>GPA: 4.23 / 5.00</p>
+                <p class="muted">Board: Barishal</p>
               </div>
             </article>
           </div>
@@ -223,7 +225,7 @@
           <h2 class="section-title">Training & Certification</h2>
           <div class="cards-grid">
             <article class="card">
-              <img src="https://source.unsplash.com/320x200/?java,programming,code" alt="Training: Programming in Java" loading="lazy" width="320" height="200" />
+              <img src="assets/images/cert-web.svg" alt="Training: Programming in Java" loading="lazy" width="320" height="200" />
               <div class="card-body">
                 <h3>Programming in Java</h3>
                 <p class="muted">CSLiT Connecting Technology — Sector 9, Uttara, Dhaka</p>
@@ -231,7 +233,7 @@
               </div>
             </article>
             <article class="card">
-              <img src="https://source.unsplash.com/320x200/?computer,office,application" alt="Training: Computer Office Application" loading="lazy" width="320" height="200" />
+              <img src="assets/images/cert-it.svg" alt="Training: Computer Office Application" loading="lazy" width="320" height="200" />
               <div class="card-body">
                 <h3>Computer Office Application</h3>
                 <p class="muted">Sultana-Maleka Science & Technology — Lalmohon, Bhola</p>
@@ -248,21 +250,21 @@
           <h2 class="section-title">Projects</h2>
           <div class="cards-grid">
             <article class="card project">
-              <img src="https://source.unsplash.com/600x400/?inventory,lab,assets" alt="Project preview: Lab Asset Tracker" loading="lazy" width="600" height="400" />
+              <img src="assets/images/prj-asset-tracker.svg" alt="Project preview: Lab Asset Tracker" loading="lazy" width="600" height="400" />
               <div class="card-body">
                 <h3>Lab Asset Tracker</h3>
                 <p class="muted">Inventory management for equipment, with maintenance reminders and status tracking.</p>
               </div>
             </article>
             <article class="card project">
-              <img src="https://source.unsplash.com/600x400/?network,monitoring,dashboard" alt="Project preview: Network Monitoring Dashboard" loading="lazy" width="600" height="400" />
+              <img src="assets/images/prj-network-dashboard.svg" alt="Project preview: Network Monitoring Dashboard" loading="lazy" width="600" height="400" />
               <div class="card-body">
                 <h3>Network Monitoring Dashboard</h3>
                 <p class="muted">Lightweight dashboard to visualize connectivity, uptime, and device health.</p>
               </div>
             </article>
             <article class="card project">
-              <img src="https://source.unsplash.com/600x400/?maintenance,schedule,calendar,lab" alt="Project preview: Equipment Maintenance Scheduler" loading="lazy" width="600" height="400" />
+              <img src="assets/images/prj-maintenance-scheduler.svg" alt="Project preview: Equipment Maintenance Scheduler" loading="lazy" width="600" height="400" />
               <div class="card-body">
                 <h3>Equipment Maintenance Scheduler</h3>
                 <p class="muted">Simple planner to schedule preventive maintenance and log service history.</p>
@@ -272,20 +274,7 @@
         </div>
       </section>
 
-      <!-- Gallery Section -->
-      <section id="gallery" class="section alt" data-reveal>
-        <div class="container">
-          <h2 class="section-title">Gallery</h2>
-          <div class="gallery-grid">
-            <img src="https://source.unsplash.com/600x400/?lab,work" alt="Gallery image: lab work" loading="lazy" width="600" height="400" />
-            <img src="https://source.unsplash.com/600x400/?computer,setup" alt="Gallery image: computer setup" loading="lazy" width="600" height="400" />
-            <img src="https://source.unsplash.com/600x400/?network,cabling" alt="Gallery image: network cabling" loading="lazy" width="600" height="400" />
-            <img src="https://source.unsplash.com/600x400/?workspace,tech" alt="Gallery image: tech workspace" loading="lazy" width="600" height="400" />
-            <img src="https://source.unsplash.com/600x400/?lab,equipment" alt="Gallery image: lab equipment" loading="lazy" width="600" height="400" />
-            <img src="https://source.unsplash.com/600x400/?teamwork,tech" alt="Gallery image: teamwork in tech" loading="lazy" width="600" height="400" />
-          </div>
-        </div>
-      </section>
+      
 
       <!-- Contact Section -->
       <section id="contact" class="section" data-reveal>
@@ -326,19 +315,35 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>© 2025 MD. Rabbi Hossen. All rights reserved.</p>
-        <div class="socials">
-          <a href="#" aria-label="Facebook" class="social-link" rel="noopener">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.2 1.8.2v2h-1c-1 0-1.3.6-1.3 1.2V12h2.3l-.4 3h-1.9v7A10 10 0 0 0 22 12"/></svg>
-          </a>
-          <a href="#" aria-label="LinkedIn" class="social-link" rel="noopener">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.94 7.5a1.94 1.94 0 1 1 0-3.88 1.94 1.94 0 0 1 0 3.88zM4.99 8.99h3.9V20h-3.9zM14.34 8.99c-2.07 0-3.24 1.14-3.8 2.2V9h-3.9v11h3.9v-5.9c0-1.56 1.04-2.6 2.46-2.6 1.36 0 2.2.85 2.2 2.6V20h3.9v-6.43c0-3.46-1.85-4.58-4.76-4.58z"/></svg>
-          </a>
-          <a href="mailto:fojlerabbicse9201@gmail.com" aria-label="Email" class="social-link" rel="noopener">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5L4 8V6l8 5 8-5z"/></svg>
-          </a>
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <h3>MD. Rabbi Hossen</h3>
+          <p class="muted">Lab Technical Officer</p>
+          <p class="muted small">Committed to excellence in laboratory and IT management.</p>
         </div>
+        <div class="footer-contact">
+          <ul class="contact-list">
+            <li><span aria-hidden="true">📞</span> <a href="tel:+8801726524950">+8801726524950</a></li>
+            <li><span aria-hidden="true">✉️</span> <a href="mailto:fojlerabbicse9201@gmail.com">fojlerabbicse9201@gmail.com</a></li>
+            <li><span aria-hidden="true">📍</span> <span>Bauphal 8620, Patuakhali</span></li>
+          </ul>
+        </div>
+        <div class="footer-socials">
+          <div class="socials">
+            <a href="#" aria-label="Facebook" class="social-link" rel="noopener">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.2 1.8.2v2h-1c-1 0-1.3.6-1.3 1.2V12h2.3l-.4 3h-1.9v7A10 10 0 0 0 22 12"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="social-link" rel="noopener">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.94 7.5a1.94 1.94 0 1 1 0-3.88 1.94 1.94 0 0 1 0 3.88zM4.99 8.99h3.9V20h-3.9zM14.34 8.99c-2.07 0-3.24 1.14-3.8 2.2V9h-3.9v11h3.9v-5.9c0-1.56 1.04-2.6 2.46-2.6 1.36 0 2.2.85 2.2 2.6V20h3.9v-6.43c0-3.46-1.85-4.58-4.76-4.58z"/></svg>
+            </a>
+            <a href="mailto:fojlerabbicse9201@gmail.com" aria-label="Email" class="social-link" rel="noopener">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5L4 8V6l8 5 8-5z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© 2025 MD. Rabbi Hossen. All rights reserved.</p>
       </div>
       <script type="application/ld+json">
       {
