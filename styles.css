@@ -306,7 +306,6 @@ img, svg {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 18px;
-  padding: 10px;
 }
 
 .skill {
@@ -367,7 +366,6 @@ img, svg {
 .card img { width: 100%; height: auto; }
 
 /* Training & Certification card images - full width, square corners */
-#certificates .card { overflow: visible; padding: 8px; }
 #certificates .card img { width: 100%; height: auto; border-radius: 0; aspect-ratio: 16/10; object-fit: cover; }
 
 /* Education grid side by side on large screens */
